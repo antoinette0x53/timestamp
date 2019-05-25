@@ -6,7 +6,7 @@ import datetime
 import urllib.parse
 
 # Settings for connection to timestamp service
-timezone = 'Etc/GMT+7'
+timezone = 'America/Chicago'
 host = 'http://0.0.0.0'
 port = '5000'
 
@@ -16,8 +16,8 @@ try:
 		timezone = urllib.parse.quote(timezone, safe='')
 	else:
 		print('Requesting current time in UTC time.')
-	r = requests.get(host+':'+port+'/?tz='+timezone)
-	if r.status_code == '200':
+	r = requests.get(host+':'+port+'/timestamp?tz='+timezone)
+	if r.status_code == 200:
 		try:
 			timestamp = datetime.datetime.strptime(r.json()['currentTime'],'%Y-%m-%d %H:%M:%S')
 			timeString = 'Today is {0:%B} {0:%d}, {0:%Y} and the current time is {0:%I:%M:%S %p}.'.format(timestamp)
