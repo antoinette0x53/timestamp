@@ -12,7 +12,7 @@ Example output: `{"currentTime": "2019-05-25 03:06:19"}`
 ## Timestamp Client
 _A simple client to connect to the timestamp web service and parse and display the date and time_
 
-$ python3 get_timestamp.py {timezone} will return the date and time in a human readable format.
+`$ python3 get_timestamp.py {timezone}` will return the date and time in a human readable format.
 
 Example:
 ```
