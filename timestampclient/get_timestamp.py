@@ -4,14 +4,15 @@ import requests
 import json
 import datetime
 import urllib.parse
+import sys
 
 # Settings for connection to timestamp service
-timezone = 'America/Chicago'
 host = 'http://0.0.0.0'
 port = '5000'
-
+timezone = ''
 try:
-	if timezone is not '':
+	if len(sys.argv) > 1:
+		timezone = sys.argv[1]
 		print('Requesting current time for timezone: '+timezone)
 		timezone = urllib.parse.quote(timezone, safe='')
 	else:

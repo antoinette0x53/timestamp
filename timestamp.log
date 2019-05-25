@@ -1,0 +1,6 @@
+2019-05-24 22:46:30,531 - [INFO] - 127.0.0.1 requested http://0.0.0.0:5000/timestamp?tz=America%2FChicago: New timestamp request.
+2019-05-24 22:46:30,535 - [INFO] - 127.0.0.1 requested http://0.0.0.0:5000/timestamp?tz=America%2FChicago: Sending timestamp.
+2019-05-24 22:46:38,056 - [INFO] - 127.0.0.1 requested http://0.0.0.0:5000/timestamp?tz=: New timestamp request.
+2019-05-24 22:46:38,056 - [INFO] - 127.0.0.1 requested http://0.0.0.0:5000/timestamp?tz=: Sending timestamp.
+2019-05-24 22:49:18,805 - [INFO] - 127.0.0.1 requested http://0.0.0.0:5000/timestamp?tz=America%2FDenver: New timestamp request.
+2019-05-24 22:49:18,807 - [INFO] - 127.0.0.1 requested http://0.0.0.0:5000/timestamp?tz=America%2FDenver: Sending timestamp.
